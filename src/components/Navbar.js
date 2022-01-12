@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   FaFacebook,
   FaSearch,
@@ -21,28 +21,9 @@ import Notification from './Notification';
 import Settings from "./Setttings";
 import InboxNotification from './InboxNotification';
 import NavSideMenu from "./NavSideMenu";
-const Navbar = () => {
-  const [notificationactive, setNotifactive] = useState(false);
-  const [settingsActive, SetsettingsActive] = useState(false);
-  const [InboxActive, SetInboxActive] = useState(false);
-  const [NavMenuActive, SetNavMenuActive] = useState(false);
 
-  function toggleNotification() {
-    if (!notificationactive) setNotifactive(true);
-    else setNotifactive(false);
-  }
-  function toggleSettings() {
-    if (!settingsActive) SetsettingsActive(true);
-    else SetsettingsActive(false);
-  }
-  function toggleInbox() {
-    if (!InboxActive) SetInboxActive(true);
-    else SetInboxActive(false);
-  }
-  function toggleNavMenu() {
-    if (!NavMenuActive) SetNavMenuActive(true);
-    else SetNavMenuActive(false);
-  }
+const Navbar = (props) => {
+
   return (
     <>
       <div className="main_nav fixed-top">
@@ -107,39 +88,39 @@ const Navbar = () => {
                 <h6 className="mt-2">Hassan</h6>
               </div>
               <div className="mr-1 side_tabs text-center">
-                <span className="d-block" onClick={toggleNavMenu} >
+                <span className="d-block" onClick={props.toggleNavMenu} >
                   <span className="d-block text-center">
                     <FaGripHorizontal className="middle_icons" />
                   </span>
                 </span>
                 {/* ************** OnClick  InboxNotification Icons Toggle Notifications ************** */}
-                {NavMenuActive ? <NavSideMenu /> : null}
+                {props.NavMenuActive ? <NavSideMenu /> : null}
               </div>
               <div className="mr-1 side_tabs">
-                <span className="d-block" onClick={toggleInbox} >
+                <span className="d-block" onClick={props.toggleInbox} >
                   <span className="d-block text-center">
                     <span className="notify-small">5</span>
                     <FaFacebookMessenger className="middle_icons" />
                   </span>
                 </span>
                 {/* ************** OnClick  InboxNotification Icons Toggle Notifications ************** */}
-                {InboxActive ? <InboxNotification /> : null}
+                {props.InboxActive ? <InboxNotification /> : null}
               </div>
               <div className="mr-1 side_tabs" >
-                <span className="d-block" onClick={toggleNotification} >
+                <span className="d-block" onClick={props.toggleNotification} >
                   <span className="d-block text-center">
                     <span className="notify-small">15</span>
                     <FaBell className="middle_icons" />
                   </span>
                   {/* ************** OnClick  Notification Icons Toggle Notifications ************** */}
-                  {notificationactive ? <Notification /> : null}
+                  {props.notificationactive ? <Notification /> : null}
                 </span>
               </div>
               <div className="mr-2 side_tabs">
-                <span className="text-center d-block" onClick={toggleSettings} >
+                <span className="text-center d-block" onClick={props.toggleSettings} >
                   <FaAngleDown className="middle_icons" />
                   {/* ************** OnClick  Settings DropDown Icons Toggle Notifications ************** */}
-                  {settingsActive ? <Settings /> : null}
+                  {props.settingsActive ? <Settings /> : null}
                 </span>
               </div>
             </div>

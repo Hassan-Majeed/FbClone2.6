@@ -3,12 +3,14 @@ import Stories from "./Stories";
 import LeftSide from "./LeftSide";
 import Posts from "./Posts";
 import RightSide from "./RightSide";
- 
-function Body() {
+
+function Body(props) {
+
+
 
   return (
     <>
-      <div className="body_wrapper">
+      <div className="body_wrapper" onClick={props.HideAllBoxes}>
         <div className="row">
           <div className="col-lg-3  pl-4 d-none d-lg-block">
             <LeftSide className="mb-4" />
@@ -22,7 +24,7 @@ function Body() {
           <div className="col-lg-3  d-none d-lg-block">
             <RightSide />
           </div>
-        </div>     
+        </div>
       </div>
     </>
   );

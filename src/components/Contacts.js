@@ -22,6 +22,7 @@ function Contacts() {
   const [msgState, setmsgState] = useState(false);
   const [grouppmsgState, groupsetmsgState] = useState(false);
 
+
   const [name, setUserName] = useState("");
   const [chatAvatar, setchatAvatar] = useState("");
 

@@ -8,7 +8,7 @@ const Settings = () => {
         <>
             <div className="Settings" >
                 <div className='d-flex align-items-center myProfile'>
-                    <img src={userImg} class="rounded-circle" alt="avatar" style={{ width: "55px", height: "55px" }} />
+                    <img src={userImg} className="rounded-circle" alt="avatar" style={{ width: "55px", height: "55px" }} />
                     <div className='profile_details ml-2'>
                         <h5>Hassan Majeed</h5>
                         <h6>See Your Profile</h6>

@@ -21,7 +21,7 @@ const Notification = () => {
                 {
                     notificationData.map((notif) => {
                         return (
-                            <div className="d-flex justify-content-between align-items-center hoverEffect">
+                            <div key={notif.id} className="d-flex justify-content-between align-items-center hoverEffect">
                                 <img className="rounded-circle mr-2" src={notif.avatar} alt="profile" style={{ width: "50px", height: "50px" }} />
                                 <div className="notificationDetails">
                                     <p className="mb-0"><b>{notif.UserName}</b> {notif.notificationDetails}</p>

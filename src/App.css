@@ -1122,4 +1122,14 @@ img.rounded-circle.mutualfriend_img2 {
   .group_names {
     font-size: 16px;
   }
+
+  video {
+    height: 100%;
+  }
+
+  .notify-small, .notify {
+    height: 15px;
+    width: 15px;
+    font-size: 10px;
+  }
 }

@@ -22,16 +22,14 @@ const InboxNotification = () => {
                 {
                     InboxData.map((messenger) => {
                         return (
-                            <>
-                                <div className="d-flex align-items-center hoverEffect" >
-                                    <img className="rounded-circle mr-2" src={messenger.avatar} alt="profile" style={{ width: "50px", height: "50px" }} />
-                                    <div className="notificationDetails">
-                                        <p className="mb-0"><b>{messenger.UserName}</b></p>
-                                        <p className="mb-0">{messenger.message}</p>
-                                        <p>{messenger.notificationTime}</p>
-                                    </div>
+                            <div key={messenger.id} className="d-flex align-items-center hoverEffect" >
+                                <img className="rounded-circle mr-2" src={messenger.avatar} alt="profile" style={{ width: "50px", height: "50px" }} />
+                                <div className="notificationDetails">
+                                    <p className="mb-0"><b>{messenger.UserName}</b></p>
+                                    <p className="mb-0">{messenger.message}</p>
+                                    <p>{messenger.notificationTime}</p>
                                 </div>
-                            </>
+                            </div>
                         )
                     })
                 }
