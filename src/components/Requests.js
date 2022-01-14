@@ -16,20 +16,14 @@ function Requests() {
               <h6>
                 <b>Friend requests</b>
               </h6>
-              <h6>
-                <a href="./">See all</a>
-              </h6>
+              <h6><a href="./request">See all</a></h6>
             </div>
             <FriendRequest />
           </div>
           <div className="req_you_know p-5">
             <div className="d-flex justify-content-between align-items-center mb-3">
-              <h6>
-                <b>People you may know</b>
-              </h6>
-              <h6>
-                <a href="./">See all</a>
-              </h6>
+              <h6><b>People you may know</b></h6>
+              <h6><a href="/request">See all</a></h6>
             </div>
             <div className="row">
               {KnownPeopleData.map((peopleData) => {
@@ -59,12 +53,8 @@ function Requests() {
                             </div>
                             <small className="ml-3"> 30 mutual friends</small>
                           </div>
-                          <button className="request_btns add_friend_btn">
-                            Add Friend
-                          </button>
-                          <button className="request_btns delete_btn">
-                            Remove
-                          </button>
+                          <button className="request_btns add_friend_btn">Add Friend</button>
+                          <button className="request_btns delete_btn">Remove</button>
                         </div>
                       </div>
                     </div>

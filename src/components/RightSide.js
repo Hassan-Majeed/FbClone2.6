@@ -22,7 +22,6 @@ function RightSide() {
                             <p className="mb-0">Excepturi harum maxime necessitatibus voluptate.</p>
                         </div>
                     </div>
-
                     <hr />
                     <Contacts />
                 </div>

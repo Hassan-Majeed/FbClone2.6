@@ -44,7 +44,7 @@ const PostData = [
       " Lorem ipsum dolor sit amet consectetur adipisicing elit Dolorumamet reprehenderit eum velit numquam ratione nihil inventor eassumenda id at iste voluptates placeat ex magni necessitati bussunt rem a dolor",
     postedVideo: '',
     postImg:
-      "https://www.seekpng.com/png/detail/60-604032_face-businessman-png-dummy-images-for-testimonials.png"
+      "https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Land-Cruiser/8448/1623313668941/exterior-image-165.jpg?tr=w-360"
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const PostData = [
       " Lorem ipsum dolor sitnderit eum velit numquam ra dolor",
     postedVideo: '',
     postImg:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnMYaAValxxrU0YP4Ho7EHIMCAQ9bSzHcFQ&usqp=CAU"
+      ""
   },
   {
     id: 6,

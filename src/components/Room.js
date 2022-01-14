@@ -35,14 +35,11 @@ export default class Room extends Component {
       ]
     };
     return (
-
       <div className="create_room text-center">
-
         <Slider {...settings}>
           <div className="roomBtn">
             <button className=" primarybtn">
-              <FaVideo /> Create Room
-            </button>
+              <FaVideo /> Create Room</button>
           </div>
           {
             RoomData.map((room) => {
@@ -55,11 +52,8 @@ export default class Room extends Component {
               )
             })
           }
-
-
         </Slider>
       </div>
-
     );
   }
 }

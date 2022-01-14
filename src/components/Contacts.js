@@ -22,14 +22,11 @@ function Contacts() {
   const [msgState, setmsgState] = useState(false);
   const [grouppmsgState, groupsetmsgState] = useState(false);
 
-
   const [name, setUserName] = useState("");
   const [chatAvatar, setchatAvatar] = useState("");
 
-
   const [groupUsername, setgroupUsername] = useState("");
   const [groupchatAvatar, setgroupchatAvatar] = useState("");
-
 
   const showMessages = (e) => setmsgState(true);
   /**** Getting UserName And avatars In chatbox ****/
@@ -139,11 +136,7 @@ function Contacts() {
                 style={{ paddingRight: "25px" }}
               >
                 <div>
-                  <img
-                    src={chatAvatar}
-                    className="avatars rounded-circle"
-                    alt="user_avatar"
-                  />
+                  <img src={chatAvatar} className="avatars rounded-circle" alt="user_avatar" />
                 </div>
                 <div>
                   <span className="recieved_msg ml-2 p-2 mb-2">
@@ -180,7 +173,6 @@ function Contacts() {
         // Hide it
         null
       }
-
       {grouppmsgState ?
         // If the state of Group message is true then show messages
         <div className="msg_wrapper">
@@ -241,7 +233,7 @@ function Contacts() {
           </div>
         </div>
         :
-        // Hide it
+        // Hide it 
         null
       }
     </>

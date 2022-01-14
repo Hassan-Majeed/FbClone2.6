@@ -22,6 +22,7 @@ function Posts() {
   return (
     <>
       <div className="Post_center">
+        
         <div className="createposts mt-4 mb-3">
           <div className="d-flex justify-content-center align-items-center">
             <img
@@ -91,7 +92,7 @@ function Posts() {
                 <p className="mt-2">{posts.postText}</p>
                 { //Check if Video url is empty then show image if it is available.
                   (posts.postedVideo === '')
-                    ? <img src={posts.postImg} alt="posted_img" />
+                    ? <img src={posts.postImg} alt="" />
                     :
                     //else show video 
                     <video
