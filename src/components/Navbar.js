@@ -43,7 +43,7 @@ const Navbar = (props) => {
           </div>
           <div className="col-lg-6  col-md-6 col-12 ">
             <div className="d-flex justify-content-between align-items-center menu_box">
-              <NavLink activeClassName="active_middle_tabs" exact to="/">
+              <NavLink activeClassName="active_middle_tabs" exact to="/home">
                 <div
                   data-hover="Home"
                   className="mr-2 middletabs home_tab hovertext"

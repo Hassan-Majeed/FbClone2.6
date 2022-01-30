@@ -24,7 +24,7 @@ body {
   background-color: var(--bodyColor) !important;
 }
 
-#root {
+.main-components {
   margin-top: 70px;
 }
 
@@ -910,7 +910,166 @@ img.rounded-circle.mutualfriend_img2 {
   justify-content: center;
   align-items: center;
 }
+/* -----------------------------------------  Sign In Page   -----------------------------------------  */
+h1.fb-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #1877f2;
+}
+.fb-content {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.Log_in {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: rgb(255 255 255);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 10%);
+  padding: 24px 20px 30px 20px;
+  border-radius: 15px;
+}
+.Log_in > input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #dddfe2;
+  padding-left: 15px;
+}
+.Log_in > input:focus {
+  outline: none;
+}
+.Log_in > a {
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: #166fe5;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+.Log_in > h4 {
+  padding: 5px 0 16px 0;
+}
+.main-btns {
+  background-color: #42b72a;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+/***************************************************/
+.signUp {
+  background-color: #ffffff;
+  padding: 24px 20px 30px 20px;
+}
+.inp_box {
+  width: 100%;
+  margin-bottom: 18px;
+  border: 1px solid #ccd0d5;
+  height: 45px;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 8px;
+}
+.rec_inp_box:focus,
+.inp_box:focus {
+  outline: none;
+}
 
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select_box {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  padding-left: 5px;
+  border: 1px solid #ccd0d5;
+}
+.fb_nav_form:focus,
+.select_box:focus {
+  outline: none;
+}
+.gender {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  padding: 8px;
+  padding-top: 12px;
+  height: 25px;
+  border: 1px solid #dddfe2;
+  width: 150px;
+  height: 40px;
+}
+.details {
+  font-size: 12px;
+}
+.signup_btn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #00a400;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #ffff;
+}
+.no_padding_left {
+  padding-left: 5px !important;
+}
+.no_padding_right {
+  padding-right: 5px !important;
+}
+.fb_nav {
+  padding: 5px;
+  padding-top: 0;
+  margin-bottom: 10%;
+}
+.fb_logo {
+  width: 200px;
+  height: 60px;
+  object-fit: cover;
+}
+.fb_nav_form {
+  height: 40px;
+  width: 220px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #dddfe2;
+}
+
+.forg_pass {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.forg_pass {
+  max-width: 550px;
+  margin: auto;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 10%);
+  padding: 25px;
+  border-radius: 12px;
+}
+.rec_inp_box {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #dddfe2;
+  padding-left: 10px;
+}
 /* ----------------------------------------- Message Box ------------------------------------------*/
 
 .msg_box {
@@ -1071,7 +1230,7 @@ img.rounded-circle.mutualfriend_img2 {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  top:0;
+  top: 0;
   right: 5px;
   background-color: black;
   opacity: 0.7;
@@ -1086,6 +1245,13 @@ img.rounded-circle.mutualfriend_img2 {
   left: 15px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* Footer */
+footer > ul {
+  list-style-type: none;
+}
+footer > ul li {
+  margin-right: 25px;
 }
 /* -----------------------------------------  Media Queries  -----------------------------------------  */
 
@@ -1158,11 +1324,6 @@ img.rounded-circle.mutualfriend_img2 {
   .extra_options {
     display: none;
   }
-
-  /* .main_nav {
-    position: absolute;
-  } */
-
   .body_wrapper {
     padding-top: 0;
   }
@@ -1198,5 +1359,11 @@ img.rounded-circle.mutualfriend_img2 {
   }
   .middletabs {
     padding: 5px 15px 5px 15px;
+  }
+  .fb_nav {
+    text-align: center;
+  }
+  .fb-content {
+    display: none;
   }
 }

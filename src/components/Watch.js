@@ -18,12 +18,12 @@ import {
   FaPlayCircle
 } from "react-icons/fa";
 import GroupsData from './GroupsData';
-function Watch() {
+function Watch(props) {
   const [like, setLike] = useState(false);
   const [share, setshare] = useState(false);
   return (
     <>
-      <div className="row no-gutters">
+      <div className="row no-gutters"  onClick={props.HideAllBoxes}>
         <div className="col-lg-3 col-md-3 d-md-block d-lg-block d-none">
           <div className="friend_side_tab">
             <div className="d-flex justify-content-between align-items-center p-2 mb-1">

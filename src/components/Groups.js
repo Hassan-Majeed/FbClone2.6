@@ -9,12 +9,12 @@ import {
      FaGlobeAmericas,
      FaEllipsisH,
 } from "react-icons/fa";
-function Groups() {
+function Groups(props) {
      const [like, setLike] = useState(false);
      const [share, setshare] = useState(false);
      return (
           <>
-               <div className="row no-gutters">
+               <div className="row no-gutters"  onClick={props.HideAllBoxes}>
                     <div className="col-lg-3 col-md-3 d-md-block d-lg-block d-none">
                     </div>
                     <div className="col-lg-9 col-md-9 col-12">

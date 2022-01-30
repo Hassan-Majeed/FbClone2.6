@@ -3,12 +3,20 @@ import FriendRequest from "./FriendRequest";
 import KnownPeopleData from "./KnownPeopleData";
 import FriendRequestSidebox from "./Sidebox";
 
-function Requests() {
+function Requests(props) {
   return (
     <>
-      <div className="row no-gutters">
+      <div className="row no-gutters" onClick={props.HideAllBoxes}>
         <div className="col-lg-3 col-md-3 d-md-block d-lg-block d-none">
-          <FriendRequestSidebox homeIcon="FaBahai" home="Home" CustomLists="Custom Lists" Birthdays="Birthdays" AllFriends="All Friends" FriendRequests="Friend Requests" Suggestions="Suggestions" />
+          <FriendRequestSidebox
+            homeIcon="FaBahai"
+            home="Home"
+            CustomLists="Custom Lists"
+            Birthdays="Birthdays"
+            AllFriends="All Friends"
+            FriendRequests="Friend Requests"
+            Suggestions="Suggestions"
+          />
         </div>
         <div className="col-lg-9 col-md-9 col-12">
           <div className="requests_wrapper">
@@ -16,19 +24,28 @@ function Requests() {
               <h6>
                 <b>Friend requests</b>
               </h6>
-              <h6><a href="./request">See all</a></h6>
+              <h6>
+                <a href="./request">See all</a>
+              </h6>
             </div>
             <FriendRequest />
           </div>
           <div className="req_you_know p-5">
             <div className="d-flex justify-content-between align-items-center mb-3">
-              <h6><b>People you may know</b></h6>
-              <h6><a href="/request">See all</a></h6>
+              <h6>
+                <b>People you may know</b>
+              </h6>
+              <h6>
+                <a href="/request">See all</a>
+              </h6>
             </div>
             <div className="row">
               {KnownPeopleData.map((peopleData) => {
                 return (
-                  <div key={peopleData.id} className="col-lg-3 col-md-6 col-6 mb-2 noPadding">
+                  <div
+                    key={peopleData.id}
+                    className="col-lg-3 col-md-6 col-6 mb-2 noPadding"
+                  >
                     <div key={peopleData.id} className="request_box">
                       <div className="request_img">
                         <img src={peopleData.friendAvatar} alt="images" />
@@ -53,8 +70,12 @@ function Requests() {
                             </div>
                             <small className="ml-3"> 30 mutual friends</small>
                           </div>
-                          <button className="request_btns add_friend_btn">Add Friend</button>
-                          <button className="request_btns delete_btn">Remove</button>
+                          <button className="request_btns add_friend_btn">
+                            Add Friend
+                          </button>
+                          <button className="request_btns delete_btn">
+                            Remove
+                          </button>
                         </div>
                       </div>
                     </div>

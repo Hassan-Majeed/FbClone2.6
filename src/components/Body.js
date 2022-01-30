@@ -5,6 +5,7 @@ import Posts from "./Posts";
 import RightSide from "./RightSide";
 
 function Body(props) {
+  
   return (
     <>
       <div className="body_wrapper" onClick={props.HideAllBoxes}>
