@@ -39,7 +39,8 @@ select {
 .main_nav {
   background-color: var(--primary-color);
   padding-top: 5px;
-  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
   z-index: 999999999;
 }
 
@@ -62,7 +63,7 @@ select {
   padding-left: 35px;
   outline: none;
   border: none;
-  width: 220px;
+  width: 100%;
   background-color: var(--bodyColor);
 }
 
@@ -77,7 +78,7 @@ select {
   cursor: pointer;
 }
 
-.middletabs>.middle_icons {
+.middletabs > .middle_icons {
   font-size: 40px;
   color: #64676a;
 }
@@ -95,7 +96,7 @@ select {
   color: var(--fbColor);
 }
 
-.active_middle_tabs>.middletabs>.middle_icons {
+.active_middle_tabs > .middletabs > .middle_icons {
   color: var(--fbColor);
 }
 
@@ -112,7 +113,8 @@ select {
   right: 0;
   background-color: #fff;
   cursor: pointer;
-  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 1px 3px 1px;
   top: 50px;
   z-index: 999999;
   border-radius: 15px;
@@ -138,7 +140,7 @@ select {
   height: 500px;
 }
 
-.searchMessage>input {
+.searchMessage > input {
   width: 100%;
   height: 40px;
   border-radius: 15px;
@@ -148,18 +150,18 @@ select {
   position: relative;
 }
 
-.searchMessage>.search_messenger {
+.searchMessage > .search_messenger {
   position: absolute;
   left: 25px;
   z-index: 99999;
   top: 75px;
 }
 
-.searchMessage>input:focus {
+.searchMessage > input:focus {
   outline: none;
 }
 
-.notificationBtns>button {
+.notificationBtns > button {
   border: none;
   border-radius: 10px;
   padding: 5px;
@@ -182,7 +184,7 @@ select {
   padding: 10px;
 }
 
-.privicy_links>a {
+.privicy_links > a {
   text-decoration: none;
   color: #65676b;
   font-weight: 500;
@@ -190,12 +192,12 @@ select {
   font-size: 10px;
 }
 
-.privicy_links>a:hover {
+.privicy_links > a:hover {
   text-decoration: none;
   color: #65676b;
 }
 
-.privicy_links>p {
+.privicy_links > p {
   font-size: 10px;
 }
 
@@ -211,7 +213,7 @@ select {
   background-color: var(--hoverColor);
 }
 
-.sideIconBg>.light_blue {
+.sideIconBg > .light_blue {
   font-size: 25px;
 }
 
@@ -257,7 +259,6 @@ select {
 .hovertext:before {
   content: attr(data-hover);
   visibility: hidden;
-  width: 90px;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -298,7 +299,7 @@ select {
 }
 
 .Post_center {
-  max-width: 490px;
+  max-width: 550px;
   margin: auto;
 }
 
@@ -314,14 +315,14 @@ select {
 video {
   height: 350px;
 }
-
+.my-avatar,
 .post_user_img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
 
-.PostuserName>.user {
+.PostuserName > .user {
   font-weight: 600;
   font-style: normal;
   font-variant: normal;
@@ -338,7 +339,7 @@ video {
   background-color: var(--bodyColor);
 }
 
-.modal-body>textarea {
+.modal-body > textarea {
   width: 100%;
   outline: none;
   border: none;
@@ -349,7 +350,8 @@ video {
   background-color: #fff;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .close {
@@ -382,7 +384,8 @@ select.selectpicker {
   padding: 10px;
   border: 1px solid var(--bodyColor);
   border-radius: 10px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 button.post {
@@ -398,7 +401,8 @@ button.post {
 
 button.post:hover {
   color: #000000;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .Livevideo,
@@ -427,22 +431,22 @@ button.post:hover {
   font-size: 16px;
 }
 
-.Livevideo>span>h6,
-.Photo_Video>span>h6,
-.Feeling_Activity>span>h6 {
+.Livevideo > span > h6,
+.Photo_Video > span > h6,
+.Feeling_Activity > span > h6 {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-.Livevideo>span>.extra_opt_icons {
+.Livevideo > span > .extra_opt_icons {
   color: rgb(243 66 95);
 }
 
-.Photo_Video>span>.extra_opt_icons {
+.Photo_Video > span > .extra_opt_icons {
   color: rgb(69 189 98);
 }
 
-.Feeling_Activity>span>.extra_opt_icons {
+.Feeling_Activity > span > .extra_opt_icons {
   color: rgb(247 185 40);
 }
 
@@ -476,18 +480,19 @@ button.post:hover {
   font-size: 12px;
 }
 
-.group_user, .gamimng_user,
+.group_user,
+.gamimng_user,
 .user_posts {
   background-color: var(--primary-color);
   border-radius: 10px;
 }
 
-.PostuserName>p,
-.PostuserName>h5 {
+.PostuserName > p,
+.PostuserName > h5 {
   margin-bottom: 0;
 }
 
-.post_content>img {
+.post_content > img {
   width: 100%;
   object-fit: contain;
 }
@@ -556,15 +561,13 @@ button.post:hover {
 }
 
 .fixed_left {
-  position: sticky;
+  /* position: fixed; */
   left: 0;
-  max-width: 360px;
 }
 
 .fixed_right {
-  position: sticky;
+  /* position: fixed; */
   right: 0;
-  max-width: 550px;
 }
 
 .right_side_scroll:hover,
@@ -628,13 +631,13 @@ button.post:hover {
   background-color: var(--hoverColor);
 }
 
-.side_links>a {
+.side_links > a {
   margin-right: 10px;
   text-decoration: none;
   font-size: 15px;
 }
 
-.side_links>a:hover {
+.side_links > a:hover {
   text-decoration: none;
 }
 
@@ -647,6 +650,7 @@ button.post:hover {
 
 .light_blue {
   color: var(--fbColor);
+  font-size: 20px;
 }
 
 .Spons_img {
@@ -672,13 +676,13 @@ button.post:hover {
   background-color: var(--hoverColor);
 }
 
-.message_box>h4 {
+.message_box > h4 {
   font-size: 15px;
   font-weight: 600;
   font-style: normal;
 }
 
-.Group_conversation>h4 {
+.Group_conversation > h4 {
   font-size: 16px;
 }
 
@@ -706,7 +710,7 @@ button.post:hover {
   text-align: center;
 }
 
-.story_img_wrap>img {
+.story_img_wrap > img {
   position: relative;
   width: 100%;
   height: 200px;
@@ -719,7 +723,7 @@ button.post:hover {
   top: -10px;
 }
 
-.story_text>h6 {
+.story_text > h6 {
   font-size: 10px;
   margin-bottom: 0;
 }
@@ -729,7 +733,7 @@ button.post:hover {
   border-radius: 20px;
 }
 
-.create_your_story>img {
+.create_your_story > img {
   height: 150px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -746,9 +750,7 @@ button.post:hover {
   width: 35px;
 }
 
-/* -------------------------------------------------------------
-                     Slick Slider Settings
-   ------------------------------------------------------------- */
+/* ------------------------ Slick Slider Settings ------------------------ */
 
 .slick-slide {
   margin-right: 10px !important;
@@ -782,13 +784,12 @@ button.slick-arrow.slick-next {
   border-radius: 50%;
   padding-bottom: 4px;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-/* ------------------------------------------------------------- 
-                        Friend Request Page 
-   -------------------------------------------------------------  */
+/* ------------------------ Friend Request Page ------------------------  */
 
 .requests_wrapper {
   padding: 50px;
@@ -806,10 +807,11 @@ button.slick-arrow.slick-next {
   border-radius: 10px;
   background-color: var(--primary-color);
   border: 1px solid var(--bodyColor);
-  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 }
 
-.request_img>img {
+.request_img > img {
   height: 190px;
   width: 100%;
   border-top-right-radius: 10px;
@@ -847,12 +849,12 @@ button.slick-arrow.slick-next {
   height: 40px;
 }
 
-.mutual_friends_details>p>img {
+.mutual_friends_details > p > img {
   width: 20px;
   height: 20px;
 }
 
-.mutual_imgs>img {
+.mutual_imgs > img {
   width: 20px;
   height: 20px;
 }
@@ -872,7 +874,7 @@ img.rounded-circle.mutualfriend_img2 {
   color: var(--fbColor);
 }
 
-.req_name>h5 {
+.req_name > h5 {
   font-size: 15px;
 }
 
@@ -892,13 +894,11 @@ img.rounded-circle.mutualfriend_img2 {
   background-color: var(--bodyColor);
 }
 
-.setting_wrapper>.friend_setting_icon {
+.setting_wrapper > .friend_setting_icon {
   font-size: 20px;
 }
 
-/* -------------------------------------------------------------   
-                              Group Page 
- -------------------------------------------------------------  */
+/* -----------------------------------------  Group Page  -----------------------------------------  */
 .group_pointer {
   font-size: 14px;
   font-weight: bold;
@@ -911,9 +911,7 @@ img.rounded-circle.mutualfriend_img2 {
   align-items: center;
 }
 
-/* ------------------------------------------------------------- 
-                             Message Box 
-------------------------------------------------------------- */
+/* ----------------------------------------- Message Box ------------------------------------------*/
 
 .msg_box {
   width: 290px;
@@ -926,7 +924,8 @@ img.rounded-circle.mutualfriend_img2 {
   padding: 6px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
@@ -944,7 +943,7 @@ img.rounded-circle.mutualfriend_img2 {
   background-color: var(--bodyColor);
 }
 
-.typewritter>textarea {
+.typewritter > textarea {
   padding-left: 2px;
   height: 21px;
   border: none;
@@ -954,7 +953,7 @@ img.rounded-circle.mutualfriend_img2 {
   background-color: var(--bodyColor);
 }
 
-.typewritter>.emoji {
+.typewritter > .emoji {
   position: absolute;
   right: 5px;
   top: 9px;
@@ -1034,15 +1033,66 @@ img.rounded-circle.mutualfriend_img2 {
 .gamming_slide {
   width: 350px !important;
 }
+/*   */
+/* -----------------------------------------  Menu Page  -----------------------------------------  */
 
-/* -------------------------------------------------------------  
-                                    Media Queries
-  -------------------------------------------------------------   */
-  
+.menu_wrapper {
+  margin-top: 100px;
+}
+.suggested-content > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bg-wite {
+  background-color: white;
+}
+.navigated-tabs {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.logout {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #ced6e3;
+  font-size: 14px;
+  padding: 20px;
+  font-weight: bold;
+}
+.content-opt1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top:0;
+  right: 5px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.content-opt2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 80px;
+  left: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* -----------------------------------------  Media Queries  -----------------------------------------  */
+
 /* ------------ For Medium Devces -------------------- */
 
 @media only screen and (max-width: 768px) {
-  .middletabs>.middle_icons {
+  .middletabs > .middle_icons {
     font-size: 18px;
   }
 
@@ -1054,9 +1104,9 @@ img.rounded-circle.mutualfriend_img2 {
     max-width: 80%;
   }
 
-  .Livevideo>span>h6,
-  .Photo_Video>span>h6,
-  .Feeling_Activity>span>h6 {
+  .Livevideo > span > h6,
+  .Photo_Video > span > h6,
+  .Feeling_Activity > span > h6 {
     font-size: 12px;
   }
 
@@ -1081,6 +1131,9 @@ img.rounded-circle.mutualfriend_img2 {
     padding: 5px;
     margin-right: 0;
   }
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
 }
 
 /* ------------ For Small Devces -------------------- */
@@ -1090,7 +1143,7 @@ img.rounded-circle.mutualfriend_img2 {
     width: 100%;
   }
 
-  .main_nav>.row>.col-lg-6 {
+  .main_nav > .row > .col-lg-6 {
     margin-top: 10px;
   }
 
@@ -1106,9 +1159,9 @@ img.rounded-circle.mutualfriend_img2 {
     display: none;
   }
 
-  .main_nav {
+  /* .main_nav {
     position: absolute;
-  }
+  } */
 
   .body_wrapper {
     padding-top: 0;
@@ -1137,9 +1190,13 @@ img.rounded-circle.mutualfriend_img2 {
     height: 100%;
   }
 
-  .notify-small, .notify {
+  .notify-small,
+  .notify {
     height: 15px;
     width: 15px;
     font-size: 10px;
+  }
+  .middletabs {
+    padding: 5px 15px 5px 15px;
   }
 }
