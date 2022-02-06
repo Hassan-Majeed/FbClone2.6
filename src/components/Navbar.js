@@ -11,7 +11,7 @@ import {
   FaFacebookMessenger,
   FaBell,
   FaAngleDown,
-  FaBars
+  FaBars,
 } from "react-icons/fa";
 import userImg from "../images/user6.jpg";
 
@@ -20,6 +20,7 @@ import Notification from "./Notification";
 import Settings from "./Setttings";
 import InboxNotification from "./InboxNotification";
 import NavSideMenu from "./NavSideMenu";
+import MobileNotifications from "./MobileNotifications"
 
 const Navbar = (props) => {
   return (
@@ -91,6 +92,19 @@ const Navbar = (props) => {
               <NavLink
                 activeClassName="active_middle_tabs"
                 className="d-lg-none d-md-none d-block"
+                exact to="/mobileNotifications"
+              >
+                <div
+                  data-hover="Notifications"
+                  className="mr-2 middletabs Menu_tab hovertext"
+                >
+                   <span className="notify">2</span>
+                  <FaBell className="middle_icons" />
+                </div>
+              </NavLink>
+              <NavLink
+                activeClassName="active_middle_tabs"
+                className="d-lg-none d-md-none d-block"
                 exact
                 to="/Menu"
               >
@@ -101,6 +115,7 @@ const Navbar = (props) => {
                   <FaBars className="middle_icons" />
                 </div>
               </NavLink>
+              
             </div>
           </div>
           <div className="col-lg-3 col-md-4 extra_options ">

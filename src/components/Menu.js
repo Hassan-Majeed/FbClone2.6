@@ -161,14 +161,17 @@ function Menu() {
             <h6 className="mb-0">
               <b>Gamming</b>
             </h6>
-            <p className="mb-0"> <FaCircle className="mr-1 text-danger" /> 2 new</p>
+            <p className="mb-0">
+              {" "}
+              <FaCircle className="mr-1 text-danger" /> 2 new
+            </p>
           </span>
         </div>
         <button className="see_more_req mt-3 mb-3">
           See more <FaChevronCircleDown className="light_blue" />
         </button>
       </div>
-      <div className="d-flex align-items-center justify-content-between mb-3 bg-wite shadow p-4 border-top border-bottom">
+      <div className="d-flex align-items-center justify-content-between bg-wite shadow p-4 border-top border-bottom">
         <span className="d-block">
           <FaRegHandshake className="light_blue" />
         </span>
@@ -181,7 +184,7 @@ function Menu() {
           <FaAngleDown className="light_blue" />
         </span>
       </div>
-      <div className="d-flex align-items-center justify-content-between mb-3 bg-wite shadow p-4 border-top border-bottom">
+      <div className="d-flex align-items-center justify-content-between bg-wite shadow p-4 border-top border-bottom">
         <span className="d-block">
           <FaQuestionCircle className="light_blue" />
         </span>
@@ -194,7 +197,7 @@ function Menu() {
           <FaAngleDown className="light_blue" />
         </span>
       </div>
-      <div className="d-flex align-items-center justify-content-between mb-3 bg-wite shadow p-4 border-top border-bottom">
+      <div className="d-flex align-items-center justify-content-between bg-wite shadow p-4 border-top border-bottom">
         <span className="d-block">
           <FaCog className="light_blue" />
         </span>
@@ -207,9 +210,10 @@ function Menu() {
           <FaAngleDown className="light_blue" />
         </span>
       </div>
-      <div className="p-4">
-        <button className="logout mt-3 mb-3">Logout</button>
-      </div>
+
+      <a href="/" className="logout w-100 text-center">
+        Logout
+      </a>
     </>
   );
 }

@@ -1217,14 +1217,13 @@ h1.fb-name {
   border-radius: 8px;
 }
 .logout {
-  width: 100%;
   outline: none;
   border: none;
-  border-radius: 10px;
   background-color: #ced6e3;
   font-size: 14px;
-  padding: 20px;
+  padding: 8px 10px;
   font-weight: bold;
+  display: block;
 }
 .content-opt1 {
   height: 30px;
@@ -1349,8 +1348,8 @@ footer > ul li {
 
   video {
     height: 100%;
-  }
-
+  } 
+  
   .notify-small,
   .notify {
     height: 15px;
@@ -1367,3 +1366,16 @@ footer > ul li {
     display: none;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .hovertext:before{
+    display: none;
+  }
+  .middletabs{
+    padding: 5px;
+  }
+  .middletabs:hover{
+    background-color: transparent;
+  }
+}
+  

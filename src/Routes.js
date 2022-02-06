@@ -14,6 +14,7 @@ import Menu from "./components/Menu";
 import { Switch, Route } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import ForgottenPass from "./components/ForgottenPass";
+import MobileNotifications from "./components/MobileNotifications";
 
 import "./App.css";
 
@@ -97,6 +98,9 @@ const Routes = () => {
           </Route>
           <Route exact path="/menu">
             <Menu />
+          </Route>
+           <Route exact path="/mobileNotifications">
+            <MobileNotifications />
           </Route>
         </div>
       </Switch>

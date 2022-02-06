@@ -22,7 +22,7 @@ function ForgottenPass() {
               placeholder="Password"
             />
             <button className="btn btn-primary mr-2"> Log In </button>
-            <a href="#" className="mr-4">
+            <a href="/" className="mr-4">
               Forgotten account?
             </a>
           </div>
@@ -41,9 +41,9 @@ function ForgottenPass() {
             className="rec_inp_box"
           />
           <div className="options d-flex justify-content-end mt-3">
-            <button className="btn btn-secondary mr-2">
+            <a href="/" className="btn btn-secondary mr-2">
               <b>Cancel</b>
-            </button>
+            </a>
             <button className="btn btn-primary">
               <b>Search</b>
             </button>
